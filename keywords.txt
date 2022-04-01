@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For NTP
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+NTP	           KEYWORD1
+ntp_datetime_t KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin			    KEYWORD2
+update		    KEYWORD2
+setTimeOffset KEYWORD2
+getTimestamp  KEYWORD2
+getDateTime   KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+NTP_DEFAULT_LOCAL_PORT    LITERAL1
+NTP_PACKET_SIZE           LITERAL1
+NTP_TIMESTAMP_DIFFERENCE  LITERAL1
