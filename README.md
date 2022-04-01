@@ -2,7 +2,7 @@
 
 The ESP32 and ESP8266 has WiFi capabilities and implementations of TCP and UDP, which allows to query NTP servers easily to get the exact time for IoT projects.
 
-```
+```cpp
 
 #include <WiFi.h>
 #include <ntp.h>
