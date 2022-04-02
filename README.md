@@ -65,7 +65,7 @@ void loop() {
 
 The constructor requires a UDP object to be passed, and optionally the address of the NTP server to be queried (`pool.ntp.org` is the default, which should select the best time server close to you)
 
-```
+```cpp
 NTP(UDP& udp);
 NTP(UDP& udp, const char *address);
 ```
@@ -74,37 +74,37 @@ NTP(UDP& udp, const char *address);
 
 When a WiFi connection is established, `begin()` creates a UDP socket
 
-```
+```cpp
 void begin(uint32_t port = NTP_DEFAULT_LOCAL_PORT)
 ```
 
 Whenever the server should be queried to update the local timestamp, call `update()` (Note: You should not call this method all to often to not flood NTP servers! Use the current time to set a RTC real time clock for example)
 
-```
+```cpp
 bool update()
 ```
 
 To get a human readable datetime, call `getDateTime()`, which returns an object with `{day, month, year, hour, minute, second}` attributes:
 
-```
+```cpp
 ntp_datetime_t getDateTime()
 ```
 
 To get the current time as Unix Timestamp (seconds since 01.01.1970 00:00:00), call
 
-```
+```cpp
 uint32_t getTimestamp()
 ```
 
 To fix `getDateTime()` for different time-zones, set the number of seconds your region deviates from UTC (for GMT+2, pass `2 * 3600`).
 
-```
+```cpp
 void setTimeOffset(int16_t timeOffset)
 ```
 
 To close the socket, call `end()`:
 
-```
+```cpp
 void end()
 ```
 
