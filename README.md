@@ -112,5 +112,5 @@ void end()
 
 Copyright and licensing
 ===
-Copyright (c) 2022, [Robert Eisele](https://www.xarg.org/)
+Copyright (c) 2024, [Robert Eisele](https://raw.org/)
 Licensed under the MIT license.
